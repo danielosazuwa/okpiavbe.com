@@ -1,0 +1,37 @@
+.bg_pic img {
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  width: 100%;
+  background: ghostwhite;
+}
+.content h2.heading {
+  text-align: center;
+}
+
+.content {
+  padding: 4%;
+}
+.content p {
+  font-size: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 745px) {
+  .bg_pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg_pic img {
+    margin-top: 160px;
+    width: 80%;
+    height: 10rem;
+  }
+  .content h2.heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .content p {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,69 @@
+.bg img {
+  width: 100%;
+  height: 50vh;
+}
+.heading {
+  margin: 2.5rem;
+}
+.heading h1 {
+  color: #009dc4;
+  font-size: 5rem;
+  text-align: center;
+}
+.practice_area {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  color: #009dc4;
+}
+.box1,
+.box2 {
+  width: 50%;
+}
+.idea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.practice_area p {
+  font-size: 2.4rem;
+  text-align: center;
+}
+.practice_area ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.practice_area ul {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 745px) {
+  .bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg img {
+    margin-top: 160px;
+    width: 80%;
+    height: 15rem;
+  }
+
+  .heading h1 {
+    font-size: 3rem;
+  }
+
+  .practice_area {
+    flex-direction: column;
+  }
+  .practice_area p {
+    font-size: 1.5rem;
+  }
+  .box1,
+  .box2 {
+    width: 100%;
+    padding: 2% 2%;
+  }
+}

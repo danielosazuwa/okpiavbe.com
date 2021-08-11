@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Montserrat;
+}
+
+#wrapper {
+  background: #f6feff;
+}
+header {
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  position: sticky;
+  top: 0;
+}
+#logo img {
+  height: 10rem;
+  width: 12rem;
+  margin-top: 0.2rem;
+}
+.nav_links {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 4rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+#active a {
+  color: #009dc4;
+}
+nav li a:hover {
+  color: blue;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+#log {
+  background-position: center;
+  background-size: cover;
+}
+#sidebar,
+#log {
+  visibility: hidden;
+  position: absolute;
+}
+img.mySlides {
+  width: 100%;
+  height: 500px;
+
+  margin-bottom: 15px;
+}
+
+/*.main_section code starts*/
+
+.main_section {
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main_section .box {
+  width: 25rem;
+  margin: 45px 1.5%;
+  color: #009dc4;
+}
+.main_section img {
+  width: 8rem;
+}
+.box {
+  padding: 1rem;
+  border: 3px solid silver;
+  box-shadow: 3px 3px 10px grey;
+  background: white;
+}
+.box h2 {
+  font-size: 2.5rem;
+}
+.box p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.read {
+  margin-top: 1.5rem;
+}
+.read a {
+  color: #838585;
+}
+.read a:hover {
+  color: blue;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+/*#main_section code ends*/
+
+/*#menu code starts*/
+
+.about {
+  padding: 4%;
+  margin-top: -30px;
+}
+.about h1 {
+  text-align: center;
+  font-size: 5vh;
+  color: #009dc4;
+  border-bottom: 7px double #009dc4;
+}
+.about p {
+  font-size: 2rem;
+}
+
+.content h2 {
+  color: #009dc4;
+  font-size: 2.5rem;
+}
+.content p {
+  text-align: justify;
+  margin-top: 30px;
+  color: #009dc4;
+}
+.history,
+.mission,
+.values,
+.vision,
+.breakthrough {
+  margin-top: 50px;
+  padding: 2%;
+}
+
+/*footer code starts*/
+
+footer {
+  background: #0c0032;
+
+  padding: 3%;
+  text-align: center;
+  color: whitesmoke;
+}
+footer h1 {
+  font-size: 6rem;
+}
+
+footer p {
+  font-size: 2.4rem;
+}
+
+/*footer code ends*/
+
+@media (min-width: 0px) and (max-width: 745px) {
+  header {
+    display: none;
+    position: absolute;
+  }
+
+  #log {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #log img {
+    width: 60%;
+    height: 15rem;
+  }
+  #sidebar {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: #000;
+    opacity: 80%;
+    left: -300px;
+    transition: 0.4s;
+  }
+  #sidebar,
+  #log {
+    visibility: visible;
+  }
+  #sidebar.active {
+    left: 0;
+    height: 342rem;
+    position: fixed;
+  }
+
+  #sidebar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1.5rem 2.4rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  #sidebar li.active a {
+    color: #009dc4;
+  }
+  #sidebar li a:hover {
+    color: blue;
+  }
+  #sidebar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #sidebar .toggle-btn {
+    position: absolute;
+    top: 120px;
+    left: 315px;
+  }
+  .toggle-btn span {
+    width: 3rem;
+    height: 0.4rem;
+    background: #000;
+    display: block;
+    margin-top: 0.6rem;
+  }
+  .content_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content_section img.mySlides {
+    width: 80%;
+    height: 10rem;
+    margin-top: 20rem;
+  }
+  .about p {
+    font-size: 1.4rem;
+  }
+  .about h2 {
+    font-size: 2rem;
+  }
+  .history,
+  .mission,
+  .values,
+  .vision,
+  .breakthrough {
+    padding: 3%;
+  }
+  footer h1 {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
