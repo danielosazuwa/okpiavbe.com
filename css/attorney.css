@@ -41,6 +41,7 @@
   .attorney_section img {
     width: 25rem;
     height: 30rem;
+    border: 0.3rem solid #009dc4;
   }
   .attorney_section p {
     font-size: 1.4rem;
