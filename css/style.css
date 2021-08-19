@@ -196,7 +196,7 @@ footer a {
     background-color: #000;
     opacity: 80%;
     left: -300px;
-    transition: 0.4s;
+    transition: 0.7s ease-out;
   }
   #sidebar,
   #log {
@@ -206,6 +206,7 @@ footer a {
     left: 0;
     height: 342rem;
     position: fixed;
+    transition: 0.7s ease-in;
   }
 
   #sidebar ul li {
@@ -228,7 +229,7 @@ footer a {
 
   #sidebar .toggle-btn {
     position: absolute;
-    top: 120px;
+    top: 30px;
     left: 315px;
   }
   .toggle-btn span {
