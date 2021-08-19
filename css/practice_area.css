@@ -58,8 +58,11 @@
   .practice_area {
     flex-direction: column;
   }
-  .practice_area p {
+    .practice_area p {
     font-size: 1.5rem;
+  }
+  .practice_area ul li {
+    font-size: 1.3rem;
   }
   .box1,
   .box2 {
